@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Huseein Bin Yahya">
+
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon/favicon.png">
+
+    <!-- Libs CSS -->
+    <link href="../../assets/fonts/feather/feather.css" rel="stylesheet" />
+    <link href="../../assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../assets/css/theme-rtl.min.css">
+    <!-- This is for Tags input -->
+    <link href="../../assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+    <link href="../../assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" >
+    
+    <title>جامعة سيئون - شئون الطلاب</title>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="db-wrapper">
+
+        <!-- navbar vertical -->
+        <!-- Sidebar -->
+        <nav class="navbar-vertical-compact ">
+            <div>
+                <!-- Brand logo -->
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../assets/images/brand/logo/sLogo.png" alt="" class="text-inverse" height="30">
+                </a>
+                <!-- Navbar nav -->
+                <ul class="navbar-nav flex-column" id="sideNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat">
+                            <i class="nav-icon fe fe-home"></i>
+                            <div id="chat" class="d-none">
+                                <span class="fw-semi-bold fs-6">لوحة التحكم </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><span class="dropdown-header ">المستخدمين</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-instructor.html">
+                                    إدارة المستخدمين
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة المجموعات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة اللائحة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إستيراد بيانات الطلاب
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="courseDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-book"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+                            <li><span class="dropdown-header ">إدارة بيانات الجامعة</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item " href="../admin-course-overview.html">
+                                    إدارة الجامعة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item " href="../admin-course-category.html">
+                                    إدارة الكليات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    إدارة الأقسام
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    إدارة التخصصات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    الدرجة العلمية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    خطط الفصول الدراسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    الدرجة العلمية للتخصص
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    المستويات الدراسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-course-category-single.html">
+                                    هيئة التدريس
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="cmsDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-book-open"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cmsDropdown">
+                            <li><span class="dropdown-header ">إدارة الخطة الدراسية</span></li>
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between " href="layout-compact.html#">
+                                    المقررات الدراسية
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="../setting-google.html">
+                                            مقررات تخرج
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="../setting-google.html">
+                                            مقررات سابقة
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" href="../setting-google.html">
+                                            مقررات جديدة
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item " href="../admin-cms-post.html">
+                                    نوع المقرر
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-new.html">
+                                    نظام الدرجات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-category.html">
+                                    نظام التقديرات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-category.html">
+                                    الخطة الدراسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-category.html">
+                                    مقررات الخطة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-category.html">
+                                    مقررات الفصل الدراسي
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-cms-post-category.html">
+                                    المقاصلة والإستنهاج
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="tableDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-database"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="tableDropdown">
+                            <li><span class="dropdown-header"> بيانات الطالب الأساسية</span></li>
+
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../basic-table.html">
+                                    أنواع القبول
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    بيانات الجنسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    بيانات المحافظات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    الجهات المانحة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    نوع الهوية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    نوع المؤهل
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    الطلبة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    التسجيل
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    استيراد للبكالوريوس
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../datatables.html">
+                                    استيراد للدراسات العليا
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="projectDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-file"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="projectDropdown">
+                            <li><span class="dropdown-header ">إدارة الأعوام الجامعية</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item " href="../project-grid.html">
+                                    الأعوام الجامعية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item " href="../project-list.html">
+                                    الفصول الدراسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../project-overview.html">
+                                    الدفعات الدراسية للبكالوريوس
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../project-task.html">
+                                    الدفعات الدارسية للماجستير
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="ecommerceDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-compass"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ecommerceDropdown">
+                            <li><span class="dropdown-header"> توزيع القاعات</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../ecommerce/shopping-cart.html">توزيع الطلاب والقاعات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../ecommerce/checkout.html">توزيع الدور التكميلي</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../ecommerce/order.html">توزيع الأرقام السرية</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="layoutsDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-feather"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
+                            <li><span class="dropdown-header"> إدارة عمليات الطالب</span></li>
+
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-horizontal.html">
+                                    بيانات الطالب عبر الباركود
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-vertical.html">
+                                    عمليات قيد الطالب
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-compact.html">
+                                    إدارة الغياب
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-compact.html">
+                                    عملية فصل طالب
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-compact.html">
+                                    إدارة إنسحاب الطالب
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="layout-compact.html">
+                                    السيرة الأكاديمية
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="layoutsDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-layout"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
+                            <li><span class="dropdown-header"> الدرجات الإمتحانية</span></li>
+
+                            <li class="nav-item">
+                                <a class="dropdown-item"
+                                   href="layout-horizontal.html">إدخال الدرجات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item"
+                                   href="layout-vertical.html">إدخال درجات الإضافة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item"
+                                   href="layout-compact.html">
+                                    إدخال درجات الدور التكميلي
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../task-kanban.html"
+                           data-template="task">
+                            <i class="nav-icon mdi mdi-trello"></i>
+                            <div id="task" class="d-none">
+                                <span class="fw-semi-bold fs-6">المهام الإدارية </span>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+                <!-- Card -->
+
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <main id="page-content-for-mini">
+            <div class="header">
+                <!-- navbar -->
+                <nav class="navbar-default navbar navbar-expand-lg">
+                    <a id="nav-toggle" href="layout-compact.html#">
+                        <i class="fe fe-menu"></i>
+                    </a>
+                    <div class="ms-lg-3 d-none d-md-none d-lg-block">
+                        <div class="ms-lg-3 d-none d-md-none d-lg-block">
+                            <!-- Form -->
+                            <a href="#" class="d-flex">
+                                <img src="../../assets/images/brand/logo/sayun_univ2-2.png" height="48">
+                                <p class="text-dark fw-bold ms-2 mt-2"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Navbar nav -->
+                    <div class="ms-auto d-flex">
+                        <div class="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle ">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div>
+                        <div class="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle ms-2 ">
+                            <a class="btn btn-light btn-icon rounded-circle text-muted" href="layout-compact.html#" data-bs-toggle="fullscreen">
+                                <i class="fe bi-arrows-fullscreen"></i>
+                            </a>
+                        </div>
+                        <ul class="navbar-nav navbar-right-wrap ms-2 d-flex nav-top-wrap">
+                            <li class="dropdown stopevent">
+                                <a class="btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted" href="layout-compact.html#" role="button" id="dropdownNotification" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fe fe-bell"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg" aria-labelledby="dropdownNotification">
+                                    <div>
+                                        <div class="border-bottom px-3 pb-3 d-flex justify-content-between align-items-center">
+                                            <span class="h4 mb-0">الإشعارات</span>
+                                            <a href="layout-compact.html# " class="text-muted">
+                                                <span class="align-middle">
+                                                    <i class="fe fe-settings me-1"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!-- List group -->
+                                        <ul class="list-group list-group-flush" data-simplebar style="max-height: 300px;">
+                                            <li class="list-group-item bg-light">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a class="text-body" href="layout-compact.html#">
+                                                            <div class="d-flex">
+                                                                <img src="../../assets/images/avatar/avatar-5.jpg"
+                                                                     alt=""
+                                                                     class="avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="fw-bold mb-1">د.محمد عبدالقادر العيدروس</h5>
+                                                                    <p class="mb-3">
+                                                                        سيتم الإجتماع صباحا في القاعة الكبرى
+                                                                        وسيتم مناقشة المستجدات
+                                                                    </p>
+                                                                    <span class="fs-6 text-muted">
+                                                                        <span>
+                                                                            <span class="fe fe-thumbs-up text-success me-1"></span>15 قبل ساعتين،
+                                                                        </span>
+                                                                        <span class="ms-1">2:19 PM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-auto text-center me-2">
+                                                        <a href="layout-compact.html#"
+                                                           class="badge-dot bg-info"
+                                                           data-bs-toggle="tooltip"
+                                                           data-bs-placement="top"
+                                                           title="تم قرأتها">
+                                                        </a>
+                                                        <div>
+                                                            <a href="layout-compact.html#"
+                                                               class="bg-transparent"
+                                                               data-bs-toggle="tooltip"
+                                                               data-bs-placement="top"
+                                                               title="إزالة">
+                                                                <i class="fe fe-x text-muted"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a class="text-body" href="layout-compact.html#">
+                                                            <div class="d-flex">
+                                                                <img src="../../assets/images/avatar/avatar-4.jpg"
+                                                                     alt=""
+                                                                     class="avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="fw-bold mb-1">حسين محمد يحيى</h5>
+                                                                    <p class="mb-3">
+                                                                        سيعقد الاجتماع السنوي لإداري الجامعة
+                                                                        بعد شهر رمضان
+                                                                    </p>
+                                                                    <span class="fs-6 text-muted">
+                                                                        <span>
+                                                                            <span class="fe fe-thumbs-up text-success me-1"></span>15 قبل شهر،
+                                                                        </span>
+                                                                        <span class="ms-1">1:20 PM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-auto text-center me-2">
+                                                        <a href="layout-compact.html#"
+                                                           class="badge-dot bg-secondary"
+                                                           data-bs-toggle="tooltip"
+                                                           data-bs-placement="top"
+                                                           title="لم يتم قرأتها">
+                                                        </a>
+                                                        <div>
+                                                            <a href="layout-compact.html#"
+                                                               class="bg-transparent"
+                                                               data-bs-toggle="tooltip"
+                                                               data-bs-placement="top"
+                                                               title="إزالة">
+                                                                <i class="fe fe-x text-muted"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a class="text-body" href="layout-compact.html#">
+                                                            <div class="d-flex">
+                                                                <img src="../../assets/images/avatar/avatar-16.jpg"
+                                                                     alt=""
+                                                                     class="avatar-md rounded-circle">
+                                                                <div class="ms-3">
+                                                                    <h5 class="fw-bold mb-1">إدارة الموقع</h5>
+                                                                    <p class="mb-3">
+                                                                        نحن سعداء بوجودك ولا تتردد في طلب المساعدة
+                                                                    </p>
+                                                                    <span class="fs-6 text-muted">
+                                                                        <span>
+                                                                            <span class="fe fe-award text-success me-1"></span>قبل سنة،
+                                                                        </span>
+                                                                        <span class="ms-1">1:56 PM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-auto text-center me-2">
+                                                        <a href="layout-compact.html#"
+                                                           class="badge-dot bg-info"
+                                                           data-bs-toggle="tooltip"
+                                                           data-bs-placement="top"
+                                                           title="تم قرأتها">
+                                                        </a>
+                                                        <div>
+                                                            <a href="layout-compact.html#"
+                                                               class="bg-transparent"
+                                                               data-bs-toggle="tooltip"
+                                                               data-bs-placement="top"
+                                                               title="إزالة">
+                                                                <i class="fe fe-x text-muted"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="border-top px-3 pt-3 pb-0">
+                                            <a href="layout-compact.html#" class="text-link fw-semi-bold">
+                                                تصفح جميع الإشعارات
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- List -->
+                            <li class="dropdown ms-2">
+                                <a class="rounded-circle" href="layout-compact.html#" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="avatar avatar-md avatar-indicators avatar-online">
+                                        <img alt="avatar" src="../../assets/images/avatar/avatar-5.jpg" class="rounded-circle">
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                                    <div class="dropdown-item">
+                                        <div class="d-flex">
+                                            <div class="avatar avatar-md avatar-indicators avatar-online">
+                                                <img alt="avatar" src="../../assets/images/avatar/avatar-5.jpg" class="rounded-circle">
+                                            </div>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1">د.محمد عبدالقادر العيدروس</h5>
+                                                <p class="mb-0 text-muted">mohammed66@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <ul class="list-unstyled">
+                                        <li class="dropdown-submenu dropstart-lg">
+                                            <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="layout-compact.html#">
+                                                <i class="fe fe-circle me-2"></i> الحالة
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="layout-compact.html#">
+                                                        <span class="badge-dot bg-success me-2"></span> متصل
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="layout-compact.html#">
+                                                        <span class="badge-dot bg-secondary me-2"></span> غير متصل
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="layout-compact.html#">
+                                                        <span class="badge-dot bg-warning me-2"></span> بعيد
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="layout-compact.html#">
+                                                        <span class="badge-dot bg-danger me-2"></span> مشغول
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="../../profile-edit.html">
+                                                <i class="fe fe-user me-2"></i> الملف الشخصي
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="../../student-subscriptions.html">
+                                                <i class="fe fe-star me-2"></i> الإنجازات
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="layout-compact.html#">
+                                                <i class="fe fe-settings me-2"></i> الإعدادات
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="dropdown-item" href="../../index.html">
+                                                <i class="fe fe-power me-2"></i> تسجيل الخروج
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Container fluid -->
+            <section class="container-fluid p-4">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <!-- Page header -->
+                        <div class="border-bottom pb-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="mb-0">
+                                    <h1 class="mb-1 h2 fw-bold">إضافة مستخدم</h1>
+                                    <!-- Breadcrumb -->
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">الإدارة</a></li>
+                                            <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">إضافة مستخدم</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div>
+                                    <a href="project-grid.html" class="btn btn-success me-1">تراجع</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <!-- card -->
+                        <div>
+                            <!-- card -->
+                            <div class="card smooth-shadow-md mb-4">
+                                <div class="card-header border-bottom px-4 py-3">
+                                    <h4 class="mb-0">حقول إدخال عادية</h4>
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- input basic -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="inputBasic" class="form-label">حقل إدخال أساسي</label>
+                                            <input id="inputBasic" class="form-control" type="text" placeholder="نص يختفي عند الكتابة" required>
+                                        </div>
+                                        <!-- input with text help and rounded input -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="inputTextHelp" class="form-label">حقل محدد بشرط وجاهز للإدخال<span class="text-danger"> *</span></label>
+                                            <input id="inputTextHelp" class="form-control rounded-pill" type="text" placeholder="لا يمكن إدخال أكثر من 20 حرف" maxlength="20" autofocus required>
+                                            <small>أكتب ما لا يزيد عن 20 حرفا.</small>
+                                        </div>
+                                        <!-- input read only -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="inputReadOnly" class="form-label">حقل لعرض البيانات</label>
+                                            <input id="inputReadOnly" class="form-control" type="text" value="يمكنك نسخ وقراءة البيانات ~_^" readonly>
+                                        </div>
+                                        <!-- input disable -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="inputDisable" class="form-label">حقل إدخال معطل</label>
+                                            <input id="inputDisable" class="form-control" type="text" placeholder="يمكنك فقط قراءة البيانات (•_•)" disabled>
+                                        </div>
+                                        <!-- select input -->
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">قائمة منسدلة</label>
+                                            <select class="form-select">
+                                              <option selected>تحديد جميع الأقسام</option>
+                                              <option value="1">الإختيار الأول</option>
+                                              <option value="2">الإختيار الثاني</option>
+                                              <option value="3">الإختيار الثالث</option>
+                                              <option value="4">الإختيار الرابع</option>
+                                              <option value="5">الإختيار الخامس</option>
+                                            </select>
+                                        </div>
+                                        <!-- select input diffrent -->
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">قائمة منسدلة بتصميم آخر مع تعليق</label>
+                                            <select class="selectpicker" data-width="100%">
+                                              <option value="">إضغط هنا</option>
+                                              <option value="select1">الإختيار الأول</option>
+                                              <option value="select2">الإختيار الثاني</option>
+                                              <option value="select3">الإختيار الثالث</option>
+                                              <option value="select4">الإختيار الرابع</option>
+                                              <option value="select5">الإختيار الخامس</option>
+                                            </select>
+                                            <small>هذا تعليق يتم استخدامه للتوضيح.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card smooth-shadow-md mb-4">
+                                <div class="card-header border-bottom px-4 py-3">
+                                    <h4 class="mb-0">حقول إدخال سلسة</h4>
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- input basic new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <input id="inputBasicD" class="form-control" type="text" aria-describedby="textHelper1" required />
+                                            <label for="inputBasicD" class="form-label">حقل إدخال بعنوان متحرك</label>
+                                            <span id="textHelper1" class="form-text">هذا تعليق يتم استخدامه للتوضيح.</span>
+                                        </div>
+                                        <!-- input password new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <input id="inputPass" class="form-control" type="password" aria-describedby="textHelper2" required />
+                                            <label for="inputPass" class="form-label">كلمة السر</label>
+                                            <span id="textHelper2" class="form-text">هذا تعليق يتم استخدامه للتوضيح.</span>
+                                        </div>
+                                        <!-- input disable new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <input id="inputDisableNew" class="form-control rounded-pill" type="text" disabled />
+                                            <label for="inputDisableNew" class="form-label">حقل إدخال (لقراءة البيانات فقط)</label>
+                                        </div>
+                                        <!-- input read only new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <input id="inputReadOnlyNew" class="form-control active" type="text" value="يمكنك نسخ وقراءة البيانات ~_^" readonly/>
+                                            <label for="inputReadOnlyNew" class="form-label">حقل إدخال بعنوان متحرك</label>
+                                        </div>
+                                        <!-- select input new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <select class="form-control active form-select" data-width="100%" required>
+                                              <option value="">إضغط هنا</option>
+                                              <option value="select1">الإختيار الأول</option>
+                                              <option value="select2">الإختيار الثاني</option>
+                                              <option value="select3">الإختيار الثالث</option>
+                                              <option value="select4">الإختيار الرابع</option>
+                                              <option value="select5">الإختيار الخامس</option>
+                                            </select>
+                                            <label class="form-label">قائمة منسدلة بعنوان متحرك</label>
+                                            <small>هذا تعليق يتم استخدامه للتوضيح.</small>
+                                        </div>
+                                        <!-- input number new -->
+                                        <div class="mb-3 col-md-6 form-outline">
+                                            <input id="inputPass" class="form-control" type="number" style="direction: rtl;" aria-describedby="textHelper3" required />
+                                            <label for="inputPass" class="form-label">أدخل الرقم فقط</label>
+                                            <span id="textHelper3" class="form-text">هذا الحقل يسمح فقط بإدخال القيم الرقمية.</span>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <!-- date -->
+                                            <div class="mb-3">
+                                                <label class="form-label">تحديد التاريخ</label>
+                                                <div class="input-group me-3">
+                                                    <input class="form-control flatpickr" type="text" placeholder="قم بتحديد التاريخ"
+                                                    aria-describedby="basic-addon2">
+                                                    <span class="input-group-text text-muted" id="basic-addon2"><i class="fe fe-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <siv class="mb-3 col-md-6">
+                                            
+                                        <div class="dropdown mt-5">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                                تصدير البيانات
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><h5 class="dropdown-header">بيانات الإكسل</h5></li>
+                                                <li><a class="dropdown-item" href="#">استيراد</a></li>
+                                                <li><a class="dropdown-item" href="#">تصدير</a></li>
+                                                <li><a class="dropdown-item" href="#">طباعة تقارير</a></li>
+                                                <li><h5 class="dropdown-header">بيانات أكسس</h5></li>
+                                                <li><a class="dropdown-item" href="#">استيراد</a></li>
+                                                <li><a class="dropdown-item" href="#">تصدير</a></li>
+                                                <li><a class="dropdown-item" href="#">طباعة تقارير</a></li>
+                                            </ul>
+                                        </div>
+                                        </siv>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card smooth-shadow-md mb-4">
+                                <div class="card-header border-bottom px-4 py-3">
+                                    <h4 class="mb-0">حقول لإدخال الملاحظات والتعديل</h4>
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <div class="mb-3 col-md-12">
+                                            <label for="customerNotes" class="form-label">حقل ملاحظات قابل للسحب <small class="text-muted">(إختياري)</small></label>
+                                            <textarea class="form-control" id="customerNotes" rows="3" placeholder="أكتب ملاحظاتك هنا..."></textarea>
+                                        </div>
+                                        <div class="mb-3 col-md-12">
+                                            <label class="form-label">حقل ملاحظات مع أداة محرر للتعديل</label>
+                                            <div id="editor">
+                                              <p><strong class="ql-size-large">عنوان المقدمة</strong></p>
+                                              <p>السلام عليكم <strong>ورحمة الله</strong> وبركاته</p>
+                                              <p><br ></p>
+                                            </div>
+                                            <small>أكتب وصف موجز لما تريد كتابته.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card -->
+                            <div class="card smooth-shadow-md mb-4">
+                              <div class="card-header border-bottom px-4 py-3">
+                                <h4 class="mb-0">الشارات أو الأصناف</h4>
+                              </div>
+                              <!-- Card body -->
+                              <div class="card-body">
+                                <input name='tags' class="w-100 px-2" value="العلوم التطبيقية, الجامعة" required>
+                              </div>
+                            </div>
+                            <!-- Card -->
+                            <div class="card smooth-shadow-md mb-4">
+                                <div class="card-header border-bottom px-4 py-3">
+                                  <h4 class="mb-0">إرفاق الصور</h4>
+                                </div>
+                                <!-- Card body -->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="mb-3 col-md-12">
+                                            <div class="custom-file-container mb-4" data-upload-id="inputImageUpload"></div>
+                                        </div>
+                                        <div class="mb-3 col-md-12">
+                                            <!-- heading -->
+                                            <h5 class="mb-1">إرفاق عدة صور</h5>
+                                            <p>قم بإرفاق عدة صور من خلال إفلاتها أو بالنقر.</p>
+                                            <!-- input -->
+                                            <form action="add-customer.html" class="d-block dropzone border-dashed rounded-2">
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <div class="mb-4">
+                                                <!-- heading -->
+                                              <h4 class="mb-4">إضافة الصورة</h4>
+                                              <h5 class="mb-1">إدراج صورة</h5>
+                                              <p>قم بإرفاق الصورة من خلال النقر يدوياً.</p>
+                                                <!-- input -->
+                                              <input type="file" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <div class="mb-4">
+                                                <!-- logo -->
+                                                <h4 class="mb-3">إضافة الصورة</h4>
+                                                <h5 class="mb-1">إدراج صورة</h5>
+                                                <p>قم بإرفاق الصورة من خلال النقر يدوياً.</p>
+                                                <div class="icon-shape icon-xxl border rounded position-relative">
+                                                    <span class="position-absolute"> <i class="bi bi-image fs-3  text-muted"></i></span>
+                                                    <input class="form-control border-0 opacity-0" type="file" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-end">
+                                <!-- buttons -->
+                                <a href="add-customer.html#" class="btn btn-outline-secondary me-2">إلغاء</a>
+                                <button class="btn btn-success" type="submit">حفظ المعلومات</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Scripts -->
+    <!-- This is for Tags input -->
+    <script src="../../assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+    <!-- This is for preview upload images -->
+    <script src="../../assets/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js"></script>
+
+    <!-- Libs JS -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+
+    <!-- Theme JS -->
+    <script src="../../assets/js/theme.min.js"></script>
+    
+    <script src="../../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../../assets/js/vendors/editor.js"></script>
+
+    <script src="../../assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+
+    <script src="../../assets/js/vendors/tooltip.js"></script>
+    <script src="../../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    <script src="../../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    
+    <!-- This is for Calender -->
+    <script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/js/vendors/flatpickr.js"></script>
+</body>
+</html>
