@@ -16,7 +16,6 @@
     <link href="../../assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
     <link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
-    <link href="bootstrap-tour-standalone.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@sjmc11/tourguidejs/dist/css/tour.min.css">
 
     <!-- CSS slider-->
@@ -34,11 +33,11 @@
     <div id="db-wrapper">
 
         <!-- navbar vertical -->
-        <!-- Sidebar -->
+        <!-- Sidebar --> 
         <nav class="navbar-vertical-compact " style="background-color: white;color: #1e293b;">
             <div>
                 <!-- Brand logo -->
-                <a data-tg-tour='Brand logo' data-tg-order="1" class="navbar-brand" href="../../index.html" style="font-weight: bold ; margin-top: 1rem;">
+                <a data-tg-tour='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum, beatae dolores alias nostrum unde porro aut repellendus rerum eius quae, ab quia eligendi facilis fuga sed quis? Adipisci, dolorum.' data-tg-order="1" class="navbar-brand" href="../../index.html" style="font-weight: bold ; margin-top: 1rem;">
                     <!-- <img src="../../assets/images/brand/logo/sLogo.png" alt="" class="text-inverse" height="30"> -->
                      SayounUniverity
                 </a>
@@ -53,6 +52,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
                                     role="button" aria-expanded="true" aria-controls="collapse1" data-bs-target="#collapse1" style="color: #1e293b;">
@@ -70,11 +70,12 @@
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                     <hr>
-                                    <div class="mt-1 ms-4">
+                                    <div class="mt-1 ms-4 pb-2">
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                 </div>
                     </li>
+                    <hr>
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
                                     role="button" aria-expanded="true" aria-controls="collapse2" data-bs-target="#collapse2" style="color: #1e293b;">
@@ -92,11 +93,12 @@
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                     <hr>
-                                    <div class="mt-1 ms-4">
+                                    <div class="mt-1 ms-4 pb-2">
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                 </div>
                     </li>
+                    <hr>
                     <li class="nav-item">
                         <a class="nav-link dropdownTooltip" href="../chat-app.html"
                            data-template="chat" style="color: #1e293b;">
@@ -106,6 +108,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
                     <li class="nav-item">
                         <a class="nav-link dropdownTooltip" href="../chat-app.html"
                            data-template="chat" style="color: #1e293b;">
@@ -115,6 +118,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
                     <li class="nav-item">
                         <a class="nav-link dropdownTooltip" href="../chat-app.html"
                            data-template="chat" style="color: #1e293b;">
@@ -124,6 +128,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
                     <li class="nav-item">
                         <a class="nav-link dropdownTooltip" href="../chat-app.html"
                            data-template="chat" style="color: #1e293b;">
@@ -133,6 +138,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
                                     role="button" aria-expanded="true" aria-controls="collapse2" data-bs-target="#collapse3" style="color: #1e293b;">
@@ -150,11 +156,12 @@
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                     <hr>
-                                    <div class="mt-1 ms-4">
+                                    <div class="mt-1 ms-4 pb-2">
                                         <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
                                     </div>
                                 </div>
                     </li>
+                    <hr>
                     <li class="nav-item">
                         <a class="nav-link dropdownTooltip" href="../chat-app.html"
                            data-template="chat" style="color: #1e293b;">
@@ -164,6 +171,7 @@
                             </div>
                         </a>
                     </li>
+                    <hr>
 <!--                     <li class="nav-item dropdown dropend">
                         <a class="nav-link " href="layout-compact.html#" id="courseDropdown" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
@@ -478,23 +486,167 @@
          <div>
             <button onclick="showQuesBar()" style="padding: 8px 18px;color: white;background-color: #d7d3d3;border: 0;">X</button>
          </div>
-         <div style="padding: 3rem;">
-             <div style="margin-top: 4rem;">
-                 <h2>لدي سؤال عن كيفية استخدام النظام</h2>
-                 <p style="color: rgb(168, 168, 168);">اسأل سؤال ودليل الفلترة سوق يساعدك</p>
+         <div id="ques-component" style="padding: 1rem 3rem;">
+             <div style="margin-top: 1rem;">
+                 <div class="d-flex align-items-center mb-3 ques-component-child" style="gap: 15px;">
+                    <i class="mdi mdi-text-box ques-item-icon"></i>
+                    <div>
+                        <h3>دليل النظام</h3>
+                        <p style="color: rgb(168, 168, 168);">إستكشف دليل المستخدم و طرق الإعداد الخاصة بكل تطبيق. تعلم من مقاطع الفيديو واحصل على المساعدة من المقالات المرجعية.</p>
+                    </div>
+                 </div>
+                 <div onclick="showQuesBarComponent2()" class="d-flex align-items-center mb-3 ques-component-child" style="gap: 15px;">
+                    <i class="mdi mdi-face-agent ques-item-icon"></i>
+                    <div>
+                        <h3> أريد التحدث مع أحد ممثلي فريق المبيعات</h3>
+                        <p style="color: rgb(168, 168, 168);">فريق هنا لمساعدتك والإجابة عن كل استفساراتك المتعلقة بالمبيعات، بما في ذلك اكتشاف حالات الاستخدام الملائمة، ومناقشة خطط التسعير، وأنظمة الفوترة الخاصة بك و مدفوعاتك.</p>
+                    </div>
+                 </div>
+                 <div onclick="showQuesBarComponent3()" class="d-flex align-items-center mb-3 ques-component-child" style="gap: 15px;">
+                    <i class="mdi mdi-book-open-variant ques-item-icon"></i>
+                    <div>
+                        <h3>لدي سؤال عن كيفية استخدام النظام</h3>
+                        <p style="color: rgb(168, 168, 168);">إستكشف دليل المستخدم و طرق الإعداد الخاصة بكل تطبيق. تعلم من مقاطع الفيديو واحصل على المساعدة من المقالات المرجعية.</p>
+                    </div>
+                 </div>
+                 <div onclick="showQuesBarComponent4()" class="d-flex align-items-center ques-component-child" style="gap: 15px;">
+                    <i class="mdi mdi-lifebuoy ques-item-icon"></i>
+                    <div>
+                        <h3>أريد الإبلاغ عن مشكلة أو تقديم مقترح</h3>
+                        <p style="color: rgb(168, 168, 168);">إستكشف دليل المستخدم و طرق الإعداد الخاصة بكل تطبيق. تعلم من مقاطع الفيديو واحصل على المساعدة من المقالات المرجعية.</p>
+                    </div>
+                 </div>
              </div>
+         </div>
+        </div>
+        <div id="ques-bar-component-2"
+         class="-left-120">
+         <div>
+            <button onclick="showQuesBarComponent2()" style="padding: 8px 18px;color: white;background-color: #d7d3d3;border: 0;">X</button>
+         </div>
+         <div id="ques-component-2" style="padding: 3rem">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center" style="gap: 15px;">
+                    <i class="mdi mdi-face-agent ques-small-item-icon"></i>
+                    <div>
+                        <h5>أريد التحدث مع أحد ممثلي فريق المبيعات</h5>
+                        <p style="color: rgb(168, 168, 168);margin: 0;margin-bottom: 5px;">اسأل سؤال ودليل الفلترة سوق يساعدك</p>
+                    </div>
+                 </div>
+                <a class="d-flex align-items-center" style="gap: 8px;">
+                    <i class="mdi mdi-book-open-variant ques-xsmall-item-icon"></i>
+                    <div>
+                        <p style="margin: 0;margin-bottom: 5px;">دليل النظام</p>
+                    </div>
+                 </a>
+            </div>
+             <form style="margin-top: 2rem;">
+                 <label style="display: block;" for="ques">العنوان</label>
+                 <input type="text" style="width: 100%;" name="ques" placeholder="عن ماذا تكون هذه الرسالة؟" class="ques-input mb-2">
+                 <label style="display: block;" for="ques">الرسالة</label>
+                 <textarea style="width: 100%;" name="ques" placeholder="اخبرنا عن استفسارك" class="ques-input mb-2"></textarea>
+                 <label style="display: block;" for="ques">المرفقات</label>
+                 <input type="file" style="width: 100%;" name="ques" class="ques-input mb-2">
+                 <button type="button" style="width: 100% !important;" class="btn btn-success hover icon-shape rounded-3 border d-flex justify-content-center align-items-center p-3 mt-4 xl-25">
+                     ارسال
+                 </button>
+             </form> 
+         </div>
+        </div>
+        <div id="ques-bar-component-3"
+         class="-left-120">
+         <div>
+            <button onclick="showQuesBarComponent3()" style="padding: 8px 18px;color: white;background-color: #d7d3d3;border: 0;">X</button>
+         </div>
+         <div id="ques-component-33" style="padding: 3rem">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center" style="gap: 15px;">
+                    <i class="mdi mdi-book-open-variant ques-small-item-icon"></i>
+                    <div>
+                        <h5>لدي سؤال عن كيفية استخدام النظام</h5>
+                        <p style="color: rgb(168, 168, 168);margin: 0;margin-bottom: 5px;">اسأل سؤال ودليل الفلترة سوق يساعدك</p>
+                    </div>
+                 </div>
+                <a class="d-flex align-items-center" style="gap: 8px;">
+                    <i class="mdi mdi-book-open-variant ques-xsmall-item-icon"></i>
+                    <div>
+                        <p style="margin: 0;margin-bottom: 5px;">دليل النظام</p>
+                    </div>
+                 </a>
+            </div>
              <form style="margin-top: 2rem;">
                  <label style="display: block;" for="ques">سؤالك</label>
-                 <input type="text" name="ques">
-                 <button type="button" style="margin-top: 4rem;width: 100% !important;" class="btn btn-outline-success hover icon-shape rounded-3 border d-flex justify-content-center align-items-center w-0 w-xl-25">
+                 <input type="text" name="ques" placeholder="كيفية انشاء فاتورة؟" class="ques-input">
+                 <div class="mt-4">
+                    <h3>النتائج :</h3>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="../../assets/images/png/no-results.png" alt="no-results"
+                        style="margin: 50px auto 13px;
+                        opacity: .5;
+                        width: 140px;">
+                    </div>
+                 </div>
+                 <h5 class="text-center" style="color: rgb(168, 168, 168);margin: 0;margin-top: 3rem;margin-bottom: 16px;">لا تستطيع إيجاد ماتبحث عنه؟</h5>
+                 <button type="button" style="width: 100% !important;" class="btn btn-outline-success hover icon-shape rounded-3 border d-flex justify-content-center align-items-center w-0 w-xl-25">
                      ارسل لنا سؤالك
                  </button>
              </form> 
          </div>
         </div>
+        <div id="ques-bar-component-4"
+        class="-left-120">
+        <div>
+           <button onclick="showQuesBarComponent4()" style="padding: 8px 18px;color: white;background-color: #d7d3d3;border: 0;">X</button>
+        </div>
+        <div id="ques-component-4" style="padding: 3rem">
+           <div class="d-flex align-items-center justify-content-between mb-3">
+               <div class="d-flex align-items-center" style="gap: 15px;">
+                   <i class="mdi mdi-lifebuoy ques-small-item-icon"></i>
+                   <div>
+                       <h5>أريد الإبلاغ عن مشكلة أو تقديم مقترح</h5>
+                       <p style="color: rgb(168, 168, 168);margin: 0;margin-bottom: 5px;">اسأل سؤال ودليل الفلترة سوق يساعدك</p>
+                   </div>
+                </div>
+               <a class="d-flex align-items-center" style="gap: 8px;">
+                   <i class="mdi mdi-book-open-variant ques-xsmall-item-icon"></i>
+                   <div>
+                       <p style="margin: 0;margin-bottom: 5px;">دليل النظام</p>
+                   </div>
+                </a>
+           </div>
+            <form style="margin-top: 2rem;">
+                <label style="display: block;" for="ques">نوع الاستفسار</label>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div style="width: 44%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    background-color: #f1f5f9;">
+                        <label for="ques">تحتاج المساعدة</label>
+                        <input type="radio" name="ques" id="">
+                    </div>
+                    <div style="width: 44%;
+                    padding: 10px;
+                    border-radius: 8px;
+                    background-color: #f1f5f9;">
+                        <label for="ques">إرسال اقتراح</label>
+                        <input type="radio" name="ques" id="">
+                    </div>
+                </div>
+                <label style="display: block;" for="ques">العنوان</label>
+                <input type="text" style="width: 100%;" name="ques" placeholder="عن ماذا تكون هذه الرسالة؟" class="ques-input mb-2">
+                <label style="display: block;" for="ques">الرسالة</label>
+                <textarea style="width: 100%;" name="ques" placeholder="اخبرنا عن استفسارك" class="ques-input mb-2"></textarea>
+                <label style="display: block;" for="ques">المرفقات</label>
+                <input type="file" style="width: 100%;" name="ques" class="ques-input mb-2">
+                <button type="button" style="width: 100% !important;" class="btn btn-success hover icon-shape rounded-3 border d-flex justify-content-center align-items-center p-3 mt-4 xl-25">
+                    ارسال
+                </button>
+            </form> 
+        </div>
+       </div>
         <!-- Page Content -->
         <main id="page-content-for-mini">
-            <div data-tg-tour='Header' data-tg-order="2" class="header">
+            <div data-tg-tour='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum, beatae dolores alias nostrum unde porro aut repellendus rerum eius quae, ab quia eligendi facilis fuga sed quis? Adipisci, dolorum.' data-tg-order="2" class="header">
                 <!-- navbar -->
                 <nav class="navbar-default navbar navbar-expand-lg">
 <!--                     <a id="nav-toggle" href="layout-compact.html#">
@@ -1542,7 +1694,8 @@
     <script src="../../assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="../../assets/libs/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://unpkg.com/@sjmc11/tourguidejs/dist/tour.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="../../assets/js/custom.js"></script>
+    
     
     <script type="text/javascript">
         $('#drpChoose').select2({
@@ -1592,26 +1745,6 @@
                  //$('#tableTemplpate').append(_r);
                 // $('#links_to_tasks').append(_g);
              });
-
-        // Instance the tour
-        const tg = new tourguide.TourGuideClient({
-            exitOnClickOutside: false
-        })
-
-        function showQuesBar() {
-        let ques = document.querySelector('#ques-bar')
-        if(ques.classList.contains('left-0')) {
-            ques.classList.add('-left-120')
-            ques.classList.remove('left-0')
-        }
-        else {
-            ques.classList.add('left-0')
-            ques.classList.remove('-left-120')
-        }
-    }
-    jQuery('.nav-link').click( function(e) {
-    jQuery('.nav-collapse').collapse('hide');
-});
     </script>
 </body>
 </html>

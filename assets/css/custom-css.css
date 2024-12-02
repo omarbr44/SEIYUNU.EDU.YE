@@ -4,7 +4,9 @@
 .-left-120 {
     left: -120%;
 }
-#ques-bar {
+#ques-bar,#ques-bar-component-2,#ques-bar-component-3,#ques-bar-component-4 {
+    transition-duration: 400ms;
+    transition-property: left;
     line-height: normal;
     position: fixed;
     top: 0;
@@ -14,6 +16,14 @@
     color: black;
     z-index: 1000;
 }
+.ques-component-child {
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+}
+.ques-component-child:hover {
+    background-color: #b0d2f556;
+}
 .nav-collapse {
     padding: 3px 0;
     background: #f1f5f9;
@@ -21,4 +31,24 @@
 }
 hr {
     margin: 8px 0;
+}
+.ques-item-icon::before {
+    color: #195a9c;
+    font-size: 80px;
+}
+.ques-small-item-icon::before {
+    color: #195a9c;
+    font-size: 40px;
+}
+.ques-xsmall-item-icon::before {
+    color: #195a9c;
+    font-size: 20px;
+}
+.ques-label {
+    color: #818283;
+}
+.ques-input {
+    width: 60%;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
 }
