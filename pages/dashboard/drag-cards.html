@@ -34,7 +34,7 @@
 
         <!-- navbar vertical -->
         <!-- Sidebar --> 
-        <nav class="navbar-vertical-compact " style="background-color: white;color: #1e293b;">
+        <nav id="nav-big" class="navbar-vertical-compact " style="background-color: white;color: #1e293b;">
             <div>
                 <!-- Brand logo -->
                 <a data-tg-tour='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum, beatae dolores alias nostrum unde porro aut repellendus rerum eius quae, ab quia eligendi facilis fuga sed quis? Adipisci, dolorum.' data-tg-order="1" class="navbar-brand" href="../../index.html" style="font-weight: bold ; margin-top: 1rem;">
@@ -172,307 +172,171 @@
                         </a>
                     </li>
                     <hr>
-<!--                     <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="courseDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-book"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="courseDropdown">
-                            <li><span class="dropdown-header ">إدارة بيانات الجامعة</span></li>
-                            <li class="nav-item">
-                                <a class="dropdown-item " href="../admin-course-overview.html">
-                                    إدارة الجامعة
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item " href="../admin-course-category.html">
-                                    إدارة الكليات
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    إدارة الأقسام
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    إدارة التخصصات
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    الدرجة العلمية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    خطط الفصول الدراسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    الدرجة العلمية للتخصص
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    المستويات الدراسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-course-category-single.html">
-                                    هيئة التدريس
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="cmsDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-book-open"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="cmsDropdown">
-                            <li><span class="dropdown-header ">إدارة الخطة الدراسية</span></li>
-                            <li class="dropdown-submenu dropend">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between " href="layout-compact.html#">
-                                    المقررات الدراسية
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item" href="../setting-google.html">
-                                            مقررات تخرج
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item" href="../setting-google.html">
-                                            مقررات سابقة
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item" href="../setting-google.html">
-                                            مقررات جديدة
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item " href="../admin-cms-post.html">
-                                    نوع المقرر
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-new.html">
-                                    نظام الدرجات
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-category.html">
-                                    نظام التقديرات
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-category.html">
-                                    الخطة الدراسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-category.html">
-                                    مقررات الخطة
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-category.html">
-                                    مقررات الفصل الدراسي
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../admin-cms-post-category.html">
-                                    المقاصلة والإستنهاج
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="tableDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-database"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="tableDropdown">
-                            <li><span class="dropdown-header"> بيانات الطالب الأساسية</span></li>
+                </ul>
+                <!-- Card -->
 
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../basic-table.html">
-                                    أنواع القبول
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    بيانات الجنسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    بيانات المحافظات
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    الجهات المانحة
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    نوع الهوية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    نوع المؤهل
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    الطلبة
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    التسجيل
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    استيراد للبكالوريوس
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../datatables.html">
-                                    استيراد للدراسات العليا
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="projectDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-file"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="projectDropdown">
-                            <li><span class="dropdown-header ">إدارة الأعوام الجامعية</span></li>
-                            <li class="nav-item">
-                                <a class="dropdown-item " href="../project-grid.html">
-                                    الأعوام الجامعية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item " href="../project-list.html">
-                                    الفصول الدراسية
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../project-overview.html">
-                                    الدفعات الدراسية للبكالوريوس
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../project-task.html">
-                                    الدفعات الدارسية للماجستير
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="ecommerceDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-compass"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="ecommerceDropdown">
-                            <li><span class="dropdown-header"> توزيع القاعات</span></li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../ecommerce/shopping-cart.html">توزيع الطلاب والقاعات</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../ecommerce/checkout.html">توزيع الدور التكميلي</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="../ecommerce/order.html">توزيع الأرقام السرية</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="layoutsDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-feather"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
-                            <li><span class="dropdown-header"> إدارة عمليات الطالب</span></li>
-
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-horizontal.html">
-                                    بيانات الطالب عبر الباركود
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-vertical.html">
-                                    عمليات قيد الطالب
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-compact.html">
-                                    إدارة الغياب
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-compact.html">
-                                    عملية فصل طالب
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-compact.html">
-                                    إدارة إنسحاب الطالب
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="layout-compact.html">
-                                    السيرة الأكاديمية
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropend">
-                        <a class="nav-link " href="layout-compact.html#" id="layoutsDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="nav-icon fe fe-layout"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
-                            <li><span class="dropdown-header"> الدرجات الإمتحانية</span></li>
-
-                            <li class="nav-item">
-                                <a class="dropdown-item"
-                                   href="layout-horizontal.html">إدخال الدرجات</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item"
-                                   href="layout-vertical.html">إدخال درجات الإضافة</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item"
-                                   href="layout-compact.html">
-                                    إدخال درجات الدور التكميلي
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+            </div>
+        </nav>
+        <nav id="nav-small" class="navbar-vertical-compact -right-120" style="background-color: white;color: #1e293b;">
+            <div>
+                <!-- Navbar nav -->
+                <ul class="navbar-nav flex-column" style="margin-top: 3rem;" id="sideNavbar">
                     <li class="nav-item">
-                        <a class="nav-link dropdownTooltip" href="../task-kanban.html"
-                           data-template="task">
-                            <i class="nav-icon mdi mdi-trello"></i>
-                            <div id="task" class="d-none">
-                                <span class="fw-semi-bold fs-6">المهام الإدارية </span>
-                            </div>
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                            <i class="nav-icon fe fe-home" ></i>
                         </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
+                                    role="button" aria-expanded="true" aria-controls="collapse1" data-bs-target="#collapse1" style="color: #1e293b;">
+                                    <i class="nav-icon fe fe-user"></i>
+                                    <!-- <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> -->
+                                    <span class="chevron-arrow float-end">
+                                    <!-- <i class="bi bi-chevron-down"> </i></span> -->
+                                </a>
+                                <!-- <div class="collapse nav-collapse" id="collapse1">
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4 pb-2">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                </div> -->
+                    </li>
+                    <hr style="margin-top: 0;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
+                                    role="button" aria-expanded="true" aria-controls="collapse2" data-bs-target="#collapse2" style="color: #1e293b;">
+                                    <i class="nav-icon fe fe-user"></i>
+                                    <!-- <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> -->
+                                    <span class="chevron-arrow float-end">
+                                    <!-- <i class="bi bi-chevron-down"> </i></span> -->
+                                </a>
+                                <!-- <div class="collapse nav-collapse" id="collapse2">
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4 pb-2">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                </div> -->
+                    </li>
+                    <hr style="margin-top: 0;">
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                           <i class="nav-icon fe fe-book"></i>
+                            <!-- <div id="chat">
+                                <span class="fw-semi-bold fs-6">إدارة بيانات الجامعة</span>
+                            </div> -->
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                           <i class="nav-icon fe fe-book-open"></i>
+                            <!-- <div id="chat">
+                                <span class="fw-semi-bold fs-6">دارة الخطة الدراسية</span>
+                            </div> -->
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                           <i class="nav-icon fe fe-database"></i>
+                            <!-- <div id="chat">
+                                <span class="fw-semi-bold fs-6">بيانات الطالب الأساسية</span>
+                            </div> -->
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                           <i class="nav-icon fe fe-file"></i>
+                            <!-- <div id="chat">
+                                <span class="fw-semi-bold fs-6">إدارة الأعوام الجامعية</span>
+                            </div> -->
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
+                                    role="button" aria-expanded="true" aria-controls="collapse2" data-bs-target="#collapse3" style="color: #1e293b;">
+                                    <i class="nav-icon fe fe-user"></i>
+                                    <!-- <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> -->
+                                    <span class="chevron-arrow float-end">
+                                    <!-- <i class="bi bi-chevron-down"> </i></span> -->
+                                </a>
+                                <!-- <div class="collapse nav-collapse" id="collapse3">
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                    <hr>
+                                    <div class="mt-1 ms-4 pb-2">
+                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
+                                    </div>
+                                </div> -->
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="nav-icon fe fe-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><span class="dropdown-header ">المستخدمين</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-instructor.html">
+                                    إدارة المستخدمين
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة المجموعات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة اللائحة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إستيراد بيانات الطلاب
+                                </a>
+                            </li>
 
-                    </li> -->
+                        </ul>
+                    </li>
+                    <hr style="margin-top: 0;">
+                    <li class="nav-item">
+                        <a class="nav-link dropdownTooltip" href="../chat-app.html"
+                           data-template="chat" style="color: #1e293b;">
+                           <i class="nav-icon fe fe-compass"></i>
+                            <!-- <div id="chat">
+                                <span class="fw-semi-bold fs-6">توزيع القاعات</span>
+                            </div> -->
+                        </a>
+                    </li>
+                    <hr>
                 </ul>
                 <!-- Card -->
 
@@ -649,9 +513,9 @@
             <div data-tg-tour='Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum, beatae dolores alias nostrum unde porro aut repellendus rerum eius quae, ab quia eligendi facilis fuga sed quis? Adipisci, dolorum.' data-tg-order="2" class="header">
                 <!-- navbar -->
                 <nav class="navbar-default navbar navbar-expand-lg">
-<!--                     <a id="nav-toggle" href="layout-compact.html#">
+                    <a id="nav-togglee" href="#" onclick="toggleNav()">
                         <i class="fe fe-menu"></i>
-                    </a> -->
+                    </a>
                     <div class="ms-lg-3 d-none d-md-none d-lg-block">
                         <div class="ms-lg-3 d-none d-md-none d-lg-block">
                         <!-- Form -->

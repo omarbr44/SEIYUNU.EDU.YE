@@ -4,6 +4,15 @@
 .-left-120 {
     left: -120%;
 }
+.right-0 {
+    right: 0;
+}
+.-right-120 {
+    right: -120%;
+}
+.mr-74 {
+    margin-right: 74px !important;
+}
 #ques-bar,#ques-bar-component-2,#ques-bar-component-3,#ques-bar-component-4 {
     transition-duration: 400ms;
     transition-property: left;
@@ -15,6 +24,25 @@
     background-color: white;
     color: black;
     z-index: 1000;
+}
+#nav-big, #nav-small {
+    transition-duration: 100ms;
+    transition-property: right;
+}
+#nav-big .navbar-nav .nav-item .nav-link {
+    display: flex !important;
+    gap: 8px;
+}
+#nav-small .navbar-nav .nav-item .nav-link {
+    display: block !important;
+}
+.navbar-vertical-compact {
+    max-width: fit-content !important;
+}
+#page-content-for-mini {
+    margin-right: 190px;
+    transition-duration: 100ms;
+    transition-property: margin-right;
 }
 .ques-component-child {
     cursor: pointer;

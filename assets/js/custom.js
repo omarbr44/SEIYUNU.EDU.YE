@@ -49,6 +49,25 @@
             ques.classList.remove('-left-120')
         }
         }
+        function toggleNav() {
+        let navBig = document.querySelector('#nav-big')
+        let navSmall = document.querySelector('#nav-small')
+        let pageContent = document.querySelector('#page-content-for-mini')
+        if(navSmall.classList.contains('-right-120')) {
+            navBig.classList.add('-right-120')
+            navBig.classList.remove('right-0')
+            navSmall.classList.remove('-right-120')
+            navSmall.classList.add('right-0')
+            pageContent.classList.add('mr-74')
+        }
+        else {
+            navSmall.classList.add('-right-120')
+            navSmall.classList.remove('right-0')
+            navBig.classList.remove('-right-120')
+            navBig.classList.add('right-0')
+            pageContent.classList.remove('mr-74')
+        }
+        }
 
 
     jQuery('.nav-link').click( function(e) {
