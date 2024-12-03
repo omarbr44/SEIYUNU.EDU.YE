@@ -13,6 +13,12 @@
 .mr-74 {
     margin-right: 74px !important;
 }
+.rotate-180::before {
+    transform: rotateY(-180deg) !important;
+}
+/* #nav-toggle-icon {
+
+} */
 #ques-bar,#ques-bar-component-2,#ques-bar-component-3,#ques-bar-component-4 {
     transition-duration: 400ms;
     transition-property: left;
@@ -35,6 +41,12 @@
 }
 #nav-small .navbar-nav .nav-item .nav-link {
     display: block !important;
+    transition-property: background-color, color;
+    transition-duration: 100ms;
+}
+#nav-small .navbar-nav .nav-item .nav-link:hover {
+    background-color: #195a9c !important;
+    color: white !important;
 }
 .navbar-vertical-compact {
     max-width: fit-content !important;
@@ -72,6 +84,9 @@ hr {
 .ques-xsmall-item-icon::before {
     color: #195a9c;
     font-size: 20px;
+}
+.nav-toggle-icon::before {
+    font-size: 30px !important; 
 }
 .ques-label {
     color: #818283;

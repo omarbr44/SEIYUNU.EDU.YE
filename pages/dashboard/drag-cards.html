@@ -188,27 +188,35 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
-                                    role="button" aria-expanded="true" aria-controls="collapse1" data-bs-target="#collapse1" style="color: #1e293b;">
-                                    <i class="nav-icon fe fe-user"></i>
-                                    <!-- <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> -->
-                                    <span class="chevron-arrow float-end">
-                                    <!-- <i class="bi bi-chevron-down"> </i></span> -->
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link " href="layout-compact.html#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false" style="color: #1e293b;">
+                            <i class="nav-icon fe fe-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><span class="dropdown-header ">المستخدمين</span></li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-instructor.html">
+                                    إدارة المستخدمين
                                 </a>
-                                <!-- <div class="collapse nav-collapse" id="collapse1">
-                                    <div class="mt-1 ms-4">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                    <hr>
-                                    <div class="mt-1 ms-4">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                    <hr>
-                                    <div class="mt-1 ms-4 pb-2">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                </div> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة المجموعات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إدارة اللائحة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="../admin-students.html">
+                                    إستيراد بيانات الطلاب
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <hr style="margin-top: 0;">
                     <li class="nav-item dropdown">
@@ -274,31 +282,9 @@
                         </a>
                     </li>
                     <hr>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-bs-toggle="collapse" href="filter-sidebar.html#collapseOne"
-                                    role="button" aria-expanded="true" aria-controls="collapse2" data-bs-target="#collapse3" style="color: #1e293b;">
-                                    <i class="nav-icon fe fe-user"></i>
-                                    <!-- <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> -->
-                                    <span class="chevron-arrow float-end">
-                                    <!-- <i class="bi bi-chevron-down"> </i></span> -->
-                                </a>
-                                <!-- <div class="collapse nav-collapse" id="collapse3">
-                                    <div class="mt-1 ms-4">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                    <hr>
-                                    <div class="mt-1 ms-4">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                    <hr>
-                                    <div class="mt-1 ms-4 pb-2">
-                                        <span class="fw-semi-bold fs-6">إدارة المستخدمين</span> 
-                                    </div>
-                                </div> -->
-                    </li>
                     <li class="nav-item dropdown dropend">
                         <a class="nav-link " href="layout-compact.html#" id="userDropdown" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
+                           aria-expanded="false" style="color: #1e293b;">
                             <i class="nav-icon fe fe-user"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="userDropdown">
@@ -514,7 +500,7 @@
                 <!-- navbar -->
                 <nav class="navbar-default navbar navbar-expand-lg">
                     <a id="nav-togglee" href="#" onclick="toggleNav()">
-                        <i class="fe fe-menu"></i>
+                        <i id="nav-toggle-icon" class="mdi mdi-backburger rotate-180 nav-toggle-icon ques-small-item-icon"></i>
                     </a>
                     <div class="ms-lg-3 d-none d-md-none d-lg-block">
                         <div class="ms-lg-3 d-none d-md-none d-lg-block">
