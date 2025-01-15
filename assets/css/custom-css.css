@@ -45,7 +45,7 @@
     transition-duration: 100ms;
 }
 #nav-small .navbar-nav .nav-item .nav-link:hover {
-    background-color: #195a9c !important;
+    background-color: #20aa16 !important;
     color: white !important;
 }
 .navbar-vertical-compact {
@@ -74,15 +74,15 @@ hr {
 }
 
 .ques-item-icon::before {
-    color: #195a9c;
+    color: #20aa16;
     font-size: 80px;
 }
 .ques-small-item-icon::before {
-    color: #195a9c;
+    color: #20aa16;
     font-size: 40px;
 }
 .ques-xsmall-item-icon::before {
-    color: #195a9c;
+    color: #20aa16;
     font-size: 20px;
 }
 .nav-toggle-icon::before {
