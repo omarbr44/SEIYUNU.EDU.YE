@@ -58,13 +58,19 @@
             navBig.classList.add('-right-120')
             navBig.classList.remove('right-0')
             navSmall.classList.remove('-right-120')
-            navSmall.classList.add('right-0')
+            if(window.innerWidth > 770)
+                navSmall.classList.add('right-0')
+            else
+                navSmall.classList.add('right-77')
             pageContent.classList.add('mr-74')
             navToggleIcon.classList.remove('rotate-180')
         }
         else {
             navSmall.classList.add('-right-120')
-            navSmall.classList.remove('right-0')
+            if(window.innerWidth > 770)
+                navSmall.classList.remove('right-0')
+            else
+                navSmall.classList.remove('right-77')
             navBig.classList.remove('-right-120')
             navBig.classList.add('right-0')
             pageContent.classList.remove('mr-74')

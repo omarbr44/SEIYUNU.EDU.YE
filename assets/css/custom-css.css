@@ -2,13 +2,17 @@
     left: 0;
 }
 .-left-120 {
-    left: -120%;
+    left: -200%;
 }
 .right-0 {
     right: 0;
 }
 .-right-120 {
     right: -120%;
+}
+
+.right-77 {
+    right: 77px;
 }
 .mr-74 {
     margin-right: 74px !important;
@@ -19,17 +23,22 @@
 /* #nav-toggle-icon {
 
 } */
+
 #ques-bar,#ques-bar-component-2,#ques-bar-component-3,#ques-bar-component-4 {
     transition-duration: 400ms;
     transition-property: left;
     line-height: normal;
     position: fixed;
     top: 0;
-    height: 100vh;
+    height: 100%;
     width: 38rem;
     background-color: white;
     color: black;
     z-index: 1000;
+}
+#ques-component,#ques-component-2,#ques-component-3,#ques-component-4{
+    height: 100%;
+    overflow-y: scroll;
 }
 #nav-big, #nav-small {
     transition-duration: 100ms;
@@ -55,6 +64,17 @@
     margin-right: 190px;
     transition-duration: 100ms;
     transition-property: margin-right;
+}
+@media(max-width: 770px) {
+    #page-content-for-mini {
+        margin-right: 0;
+    }
+    #nav-big {
+        display: none;
+    }
+    #ques-bar,#ques-bar-component-2,#ques-bar-component-3,#ques-bar-component-4 {
+        width: 100%;
+    }
 }
 .ques-component-child {
     cursor: pointer;
